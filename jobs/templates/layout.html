@@ -1,10 +1,6 @@
-#include file="templates.html"
-<!doctype html>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
-<link rel="stylesheet" href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
+{% from '_macros.html' import show_job, show_jobs with context %}
 
-<!-- <!doctype html>
+<!doctype html>
 <html>
   <head>
     <title>Job Board</title>
@@ -20,4 +16,4 @@
       </div>
     </div>
   </body>
-</html> -->
+</html>
